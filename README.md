@@ -4,7 +4,7 @@
 O ExcelToPDF-Converter é um projeto em PHP que permite converter planilhas Excel para PDF de maneira prática e rápida. Este projeto utiliza a biblioteca DOMPDF para gerar o PDF e foi desenvolvido em PHP puro, sem orientação a objetos, mantendo a simplicidade no código. Atualmente, o projeto ainda está em desenvolvimento.
 
 ## Funcionalidades
-- Importa arquivos Excel (.xlsx e .xls)
+- Importa arquivos Excel (.cls)
 - Converte e formata dados em PDF
 - Exporta o resultado em um arquivo PDF visualmente organizado
 
