@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 480px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 2px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+h1 a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+/* Estilização da section principal */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;  /* Defina o tamanho do quadrado maior */
+    width: 500px;
+    background-color: #f0f0f0; /* Cor de fundo do quadrado maior */
+    margin: auto;
+    border: 2px solid #000; /* Borda do quadrado maior */
+}
+
+/* Container que agrupa os quadrados internos */
+section div {
+    display: flex;
+    justify-content: space-around; /* Espaçamento entre os quadrados internos */
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebra de linha para os quadrados internos */
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilização dos quadrados menores */
+section div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background-color: #4caf50; /* Cor de fundo dos quadrados menores */
+    color: white; /* Cor do texto */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #000; /* Borda dos quadrados menores */
+    margin: 10px;
+    text-align: center;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+/* Efeito de hover nos quadrados menores */
+section div div:hover {
+    transform: scale(1.1); /* Aumenta o quadrado ao passar o mouse */
+}
+
+
+input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    color: #555;
+    background-color: #fff;
+    text-align: center;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #007bff;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 2px;
+}

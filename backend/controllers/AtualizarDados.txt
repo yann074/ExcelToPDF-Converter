@@ -1,0 +1,40 @@
+<?php
+
+include '../DataBase.php';
+
+
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+    $table = 'capoeira';
+
+
+    $nome = $_POST['nome'];
+    $sexo = $_POST['sexo'];
+    $data_nasc = $_POST['data'];
+    $pcd = $_POST['pcd'];
+    $cpf = $_POST['cpf'];
+    $cpf_resp = $_POST['cpf_resp'];
+    $endereco = $_POST['endereco'];
+    $cep = $_POST['cep'];
+    $escolaridade = $_POST['escolaridade'];
+    $raca = $_POST['raca'];
+
+    $query = "UPDATE $table SET nome = '{$nome}', sexo = '{$sexo}', data_nasc = '{$data_nasc}',
+    pcd = '{$pcd}', cpf = '{$cpf}', cpf_resp = '{$cpf_resp}', endereco ='{$endereco}', cep =  '{$cep}', 
+    escolaridade = '{$escolaridade}', raca = '{$raca}' ";
+
+echo $query;
+
+
+    $res = $conn->query($query);
+        if($res == true){
+            print '<script>alert("atualização feita com sucesso");</script>';
+        }else{
+            print '<script>alert("Algo deu errado, tente novamente")</script>';
+        } 
+    printf("Error: %s.\n", $conn->error);
+    return false;
+} 
+
+

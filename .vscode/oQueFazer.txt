@@ -1,0 +1,17 @@
+Login pra cada Um | OK | BASTA IMPLEMENTAR A SECTIONS 
+
+lista para update e deletar( pelo id para deletar) | DELETAR OK | UPDATE AINDA NAO
+
+arrumar os redicionamento de paginas | MAIS OU MENOS
+
+Colocar sessões | AINDA NÂO
+
+Apenas o ADM arrumar as seções | AINDA NÂO
+
+PESQUISAR | OK
+
+Rotas | EM DESENVOLVIMENTO
+
+-- Ir fazendo uma por uma
+
+php -S localhost:8000 -t backend
